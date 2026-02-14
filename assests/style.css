@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +11,11 @@ body {
     overflow-x: hidden;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif; 
-}
-
+/* ================= NAVBAR ================= */
 .navbar {
     background-color: maroon;
     color: #ffffff;
-    height: 70px;
+    min-height: 70px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid gold;
@@ -44,7 +38,7 @@ body {
 }
 
 .nav-logo span {
-    color: gold; 
+    color: gold;
 }
 
 .nav-links {
@@ -52,6 +46,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -61,7 +56,8 @@ body {
     transition: 0.3s ease;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: #ffffff;
 }
 
@@ -73,16 +69,17 @@ body {
 }
 
 .btn-credits:hover {
-    background-color: gold;
     transform: translateY(-2px);
 }
+
+/* ================= HERO SECTION ================= */
 .desktop-container {
     background: linear-gradient(135deg, #8b0000 0%, #4a0000 100%);
     min-height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .glass-card {
@@ -100,8 +97,10 @@ body {
     display: flex;
     align-items: center;
     gap: 80px;
+    flex-wrap: wrap;
 }
 
+/* ================= BRANDING ================= */
 .branding {
     flex: 1;
     position: relative;
@@ -121,12 +120,12 @@ body {
 
 .main-logo {
     width: 180px;
-    filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
-    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 100%;
+    transition: 0.4s ease;
 }
 
 .main-logo:hover {
-    transform: scale(1.05) rotate(3deg);
+    transform: scale(1.05);
 }
 
 .school-name {
@@ -154,30 +153,16 @@ body {
     font-size: 0.8rem;
     font-weight: bold;
     margin-top: 15px;
-    border: 1px solid rgba(255, 0, 0, 0.3);
     animation: pulse 2s infinite;
 }
 
+/* ================= INTRO ================= */
 .intro-side {
     flex: 1.2;
 }
 
-.mini-logo-wrapper {
-    background: rgba(255,255,255,0.05);
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-}
-
-.intro-mini-logo {
-    width: 100%;
-}
-
 .intro-box h3 {
     font-size: 2.5rem;
-    line-height: 1.2;
     margin-bottom: 20px;
     color: #ffffff;
 }
@@ -192,6 +177,7 @@ body {
 .button-group {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .cta-button {
@@ -199,13 +185,12 @@ body {
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .cta-button.primary {
     background: #800000;
     color: white;
-    box-shadow: 0 10px 20px rgba(128, 0, 0, 0.3);
 }
 
 .cta-button.secondary {
@@ -219,25 +204,11 @@ body {
     filter: brightness(1.2);
 }
 
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-
-@media (max-width: 900px) {
-    .hero-flex-container { flex-direction: column; gap: 40px; }
-    .glass-card { padding: 30px; margin: 20px; }
-    .intro-side { text-align: center; }
-    .mini-logo-wrapper { margin: 0 auto 20px auto; }
-    .button-group { justify-content: center; }
-    .year-display { font-size: 4rem; }
-}
-
+/* ================= FOOTER ================= */
 .footer {
     background: #300000;
     color: white;
-    padding: 20px 10%;
+    padding: 20px 5%;
 }
 
 .footer-content {
@@ -245,10 +216,158 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer-mini-logo {
     height: 30px;
 }
 
+/* ================= ANIMATION ================= */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+    .hero-flex-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .glass-card {
+        padding: 40px 25px;
+    }
+
+    .year-display {
+        font-size: 4rem;
+    }
+
+    .intro-box h3 {
+        font-size: 2rem;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: gold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+
+
+/* ================= MOBILE NAVBAR ================= */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        background: rgba(128, 0, 0, 0.95);
+        backdrop-filter: blur(15px);
+
+        padding: 25px 0;
+        border-radius: 0 0 20px 20px;
+        border-bottom: 2px solid gold;
+
+        opacity: 0;
+        transform: translateY(-15px);
+        pointer-events: none;
+        transition: all 0.35s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        width: 80%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px;
+        font-size: 1.05rem;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: gold;
+        color: maroon !important;
+        font-weight: 600;
+        box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    }
+
+    .glass-card { padding: 25px 20px; }
+    .main-logo { width: 130px; }
+    .year-display { font-size: 3rem; }
+    .school-name { font-size: 1rem; letter-spacing: 2px; }
+    .intro-box h3 { font-size: 1.6rem; }
+    .intro-box p { font-size: 1rem; }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .year-display { font-size: 2.4rem; }
+    .intro-box h3 { font-size: 1.3rem; }
+    .main-logo { width: 110px; }
+}
+
+.nav-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-links {
+    z-index: 9999;
+}
 

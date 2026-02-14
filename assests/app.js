@@ -1,18 +1,7 @@
-        //    <!-- <section class="credits-panel">
-        //         <div class="card-header">
-        //             <h2>Credits</h2>
-        //         </div>
-                
-        //         <div class="credits-body">
-        //             <div class="role-section">
-        //                 <div class="pill-label">Developers</div>
-        //                 <p>Navitha Aken Abeyrathne</p>
-        //                 <p></p>
-        //             </div>
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-        //             <div class="role-section">
-        //                 <div class="pill-label">Co-developer</div>
-        //                 <p></p>
-        //             </div>
-        //         </div>
-        //     </section> -->
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  toggle.classList.toggle("active");
+});
