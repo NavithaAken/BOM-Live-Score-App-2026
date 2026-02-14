@@ -74,7 +74,14 @@ body {
 
 /* ================= HERO SECTION ================= */
 .desktop-container {
-    background: linear-gradient(135deg, #8b0000 0%, #4a0000 100%);
+    background: linear-gradient(135deg,
+            #ffffff 0%,
+            #ffe6e6 20%,
+            #ffcccc 40%,
+            #ff9999 60%,
+
+        );
+
     min-height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
@@ -132,13 +139,13 @@ body {
     letter-spacing: 4px;
     font-size: 1.2rem;
     margin-top: 20px;
-    color: #e0e0e0;
+    color: maroon;
 }
 
 .year-display {
     font-size: 5rem;
     font-weight: 900;
-    background: linear-gradient(to bottom, #fff, #800000);
+    background: linear-gradient(to bottom, #ff4d4d, #800000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
@@ -146,8 +153,8 @@ body {
 
 .status-badge {
     display: inline-block;
-    background: rgba(255, 0, 0, 0.2);
-    color: #ff4d4d;
+    background: rgba(238, 112, 112, 0.856);
+    color: #e62a2a;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -164,12 +171,13 @@ body {
 .intro-box h3 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: maroon;
 }
 
 .intro-box p {
-    color: #b0b0b0;
+    color: black;
     font-size: 1.1rem;
+    font-weight: 500;
     line-height: 1.8;
     margin-bottom: 35px;
 }
@@ -194,9 +202,9 @@ body {
 }
 
 .cta-button.secondary {
-    background: transparent;
+    background: #800000;
     color: white;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .cta-button:hover {
@@ -226,9 +234,17 @@ body {
 
 /* ================= ANIMATION ================= */
 @keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* ================= RESPONSIVE ================= */
@@ -327,7 +343,7 @@ body {
         font-size: 1.05rem;
         border-radius: 10px;
         transition: 0.3s ease;
-        background: rgba(255,255,255,0.05);
+        background: rgba(255, 255, 255, 0.05);
     }
 
     .nav-links a:hover,
@@ -338,12 +354,30 @@ body {
         box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
     }
 
-    .glass-card { padding: 25px 20px; }
-    .main-logo { width: 130px; }
-    .year-display { font-size: 3rem; }
-    .school-name { font-size: 1rem; letter-spacing: 2px; }
-    .intro-box h3 { font-size: 1.6rem; }
-    .intro-box p { font-size: 1rem; }
+    .glass-card {
+        padding: 25px 20px;
+    }
+
+    .main-logo {
+        width: 130px;
+    }
+
+    .year-display {
+        font-size: 3rem;
+    }
+
+    .school-name {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .intro-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .intro-box p {
+        font-size: 1rem;
+    }
 
     .button-group {
         flex-direction: column;
@@ -357,9 +391,17 @@ body {
 }
 
 @media (max-width: 400px) {
-    .year-display { font-size: 2.4rem; }
-    .intro-box h3 { font-size: 1.3rem; }
-    .main-logo { width: 110px; }
+    .year-display {
+        font-size: 2.4rem;
+    }
+
+    .intro-box h3 {
+        font-size: 1.3rem;
+    }
+
+    .main-logo {
+        width: 110px;
+    }
 }
 
 .nav-container {
@@ -393,7 +435,7 @@ body {
     max-width: 400px;
     width: 100%;
     color: #ffffff;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
@@ -422,7 +464,7 @@ body {
     border-radius: 10px;
     border: none;
     outline: none;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     color: #fff;
     font-size: 1rem;
     transition: 0.3s ease;
@@ -433,7 +475,7 @@ body {
 }
 
 .login-form input:focus {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px gold;
 }
 
@@ -451,7 +493,7 @@ body {
 
 .login-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(255,215,0,0.5);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
 }
 
 .login-footer {
@@ -476,24 +518,30 @@ body {
     display: flex;
     justify-content: center;
     padding: 50px 5%;
-    background: linear-gradient(135deg, #8b0000 0%, #4a0000 100%);
+        background: linear-gradient(135deg,
+            #ffffff 0%,
+            #ffe6e6 20%,
+            #ffcccc 40%,
+            #ff9999 60%,
+
+        );
 }
 
 .match-info-card {
-    background: linear-gradient(135deg, #8b0000 0%, #4a0000 100%);
+     background-color: rgba(255, 217, 0, 0.11);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 25px;
     padding: 40px;
     max-width: 900px;
     width: 100%;
     color: #ffffff;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .match-title {
     font-size: 2rem;
-    color: gold;
+    color: #800000;
     margin-bottom: 30px;
     font-weight: 700;
     text-align: center;
@@ -501,16 +549,17 @@ body {
 }
 
 .match-info-card h3 {
-    color: gold;
+    color: #800000;
     margin-bottom: 10px;
 }
 
 .about-match p,
 .match-details p,
 .history-section p {
-    color: #fff;
+    color: black;
     line-height: 1.7;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .match-details h3,
@@ -543,8 +592,3 @@ body {
         font-size: 0.95rem;
     }
 }
-
-
-
-
-
