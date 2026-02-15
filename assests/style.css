@@ -450,12 +450,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 70px);
-    background: linear-gradient(135deg, #8b0000 0%, #4a0000 100%);
+    background: linear-gradient(135deg,
+            #ffffff 0%,
+            #ffe6e6 20%,
+            #ffcccc 40%,
+            #ff9999 60%,
+
+        );
     padding: 40px 20px;
 }
 
 .login-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: maroon;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 25px;
@@ -508,16 +514,18 @@ body {
 }
 
 .login-btn {
-    padding: 14px 0;
-    border: none;
-    border-radius: 12px;
-    background: gold;
-    color: maroon;
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
     transition: 0.3s ease;
 }
+
+.login-btn {
+    background: gold;
+    color: maroon;
+}
+
 
 .login-btn:hover {
     transform: translateY(-3px);
