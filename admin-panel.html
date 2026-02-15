@@ -36,7 +36,7 @@
 
     <div class="container">
 
-        <!-- LEFT PANEL -->
+
         <aside class="left-panel">
             <h3>Match Control</h3>
 
@@ -80,14 +80,15 @@
 
                 <div class="run-control">
                     <input type="number" id="runInput" placeholder="Runs (0-6)" min="0" max="6">
-                    <button type="button" class="gold-btn" onclick="updateRuns()">Update Runs</button>
+                    <button type="button" class="gold-btn">Update Runs</button>
                 </div>
 
-                <button type="button" class="maroon-btn" onclick="addWicket()">Wicket</button>
+                <button type="button" class="maroon-btn">Wicket</button>
 
-                <button type="button" class="gold-outline-btn" onclick="swapBatsmen()">Change Batsmen</button>
+                <input type="text" id="swapBatsman" placeholder="Swap Batsmen">
+                <button type="button" class="gold-outline-btn">Change Batsmen</button>
 
-                <button type="button" class="submit-btn" onclick="scoreupdate()">Send Score Update</button>
+                <button type="button" class="submit-btn">Send Score Update</button>
 
             </div>
 
