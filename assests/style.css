@@ -91,7 +91,7 @@ body {
 
 .btn-login {
     background-color: gold;
-    color: black !important;
+    color: white !important;
     padding: 8px 20px;
     border-radius: 5px;
 }
@@ -241,6 +241,33 @@ body {
 }
 
 /* ================= FOOTER ================= */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.credits-container{
+    flex: 1;
+}
+
+.desktop-container{
+    flex: 1;
+}
+
+.live-score-section{
+    flex: 1;
+}
+
+.match-info-page{
+    flex: 1;
+}
+
 .footer {
     background: #300000;
     color: white;
@@ -259,6 +286,7 @@ body {
 .footer-mini-logo {
     height: 30px;
 }
+
 
 /* ================= ANIMATION ================= */
 @keyframes pulse {
@@ -347,7 +375,7 @@ body {
 
         padding: 25px 0;
         border-radius: 0 0 20px 20px;
-        border-bottom: 2px solid gold;
+
 
         opacity: 0;
         transform: translateY(-15px);
@@ -370,7 +398,6 @@ body {
         padding: 12px;
         font-size: 1.05rem;
         border-radius: 10px;
-        transition: 0.3s ease;
         background: rgba(255, 255, 255, 0.05);
     }
 
@@ -688,7 +715,7 @@ body {
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
     .credits-container {
         padding: 40px 20px;
