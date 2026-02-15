@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOM Live Score 2026</title>
+    <link rel="stylesheet" href="assests/admin.css">
     <link rel="stylesheet" href="assests/style.css">
     <link rel="icon" type="image/x-icon" href="assests/img/bomlive.png">
 
@@ -33,6 +34,102 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container">
+
+        <!-- LEFT PANEL -->
+        <aside class="left-panel">
+            <h3>Match Control</h3>
+
+            <button class="btn start">Match Started</button>
+            <button class="btn interval">Interval/Break</button>
+            <button class="btn end">Match Ended</button>
+
+            <div class="recent">
+                <h4>Recent Updates</h4>
+                <p>No updates yet</p>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+
+            <h2>Send Score Update</h2>
+
+            <div class="form-grid">
+                <input type="number" id="inningsInput" placeholder="Innings No">
+                <input type="number" id="runsInput" placeholder="Total Runs">
+                <input type="number" id="wicketsInput" placeholder="Total Wickets">
+
+                <input type="number" id="overInput" placeholder="Over No">
+                <input type="number" id="ballInput" placeholder="Ball No">
+
+                <input type="text" id="strikerInput" placeholder="Striker">
+                <input type="text" id="bowlerInput" placeholder="Bowler">
+
+                <select>
+                    <option>Extra Type</option>
+                    <option>Wide</option>
+                    <option>No Ball</option>
+                    <option>Bye</option>
+                    <option>Leg Bye</option>
+                </select>
+            </div>
+
+            <textarea placeholder="Message (Optional)"></textarea>
+
+            <div class="form-actions">
+
+                <div class="run-control">
+                    <input type="number" id="runInput" placeholder="Runs (0-6)" min="0" max="6">
+                    <button type="button" class="gold-btn" onclick="updateRuns()">Update Runs</button>
+                </div>
+
+                <button type="button" class="maroon-btn" onclick="addWicket()">Wicket</button>
+
+                <button type="button" class="gold-outline-btn" onclick="swapBatsmen()">Change Batsmen</button>
+
+                <button type="button" class="submit-btn" onclick="scoreupdate()">Send Score Update</button>
+
+            </div>
+
+        </main>
+
+        <aside class="right-panel">
+            <h3>Current Match State</h3>
+
+            <div class="state-box">
+                <p>Status</p>
+                <strong>Not Started</strong>
+            </div>
+
+            <div class="state-box">
+                <p>Innings</p>
+                <strong>1</strong>
+            </div>
+
+            <div class="state-box highlight">
+                <p>Score</p>
+                <strong>0 / 0</strong>
+            </div>
+
+            <div class="state-box">
+                <p>Over.Ball</p>
+                <strong>0.0</strong>
+            </div>
+
+            <div class="state-box">
+                <p>Striker</p>
+                <strong>-</strong>
+            </div>
+
+            <div class="state-box">
+                <p>Bowler</p>
+                <strong>-</strong>
+            </div>
+
+        </aside>
+
+    </div>
 
 
     <footer class="footer">
