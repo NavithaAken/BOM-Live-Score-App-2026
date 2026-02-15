@@ -671,6 +671,54 @@ body {
     transform: translateY(-5px);
 }
 
+/* ================= TABLET RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .credits-card {
+        padding: 30px;
+    }
+
+    .dev-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    .credits-container {
+        padding: 40px 20px;
+    }
+
+    .credits-card {
+        padding: 25px 20px;
+    }
+
+    .credits-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .dev-grid {
+        grid-template-columns: 1fr; /* Stack cards */
+        gap: 15px;
+    }
+
+    .dev-card {
+        padding: 18px;
+    }
+
+    .dev-card h3 {
+        font-size: 16px;
+    }
+
+}
+
+
 
 /* ================= LIVE SCORE SECTION ================= */
 
