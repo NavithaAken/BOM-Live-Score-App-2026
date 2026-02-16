@@ -896,7 +896,7 @@ body {
 }
 
 .score-table table {
-    width: 100%;
+    width: auto;
 }
 
 .score-table th,
