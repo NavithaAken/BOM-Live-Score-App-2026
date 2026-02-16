@@ -888,47 +888,6 @@ body {
 }
 
 
-@media (max-width: 992px) {
-
-    .score-table {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .score-table thead th,
-    .score-table tbody td {
-        font-size: 0.9rem;
-        padding: 10px 12px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .score-table {
-        font-size: 0.85rem;
-    }
-
-    .score-table thead th,
-    .score-table tbody td {
-        padding: 8px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .score-table {
-        font-size: 0.75rem;
-    }
-
-    .score-table thead th,
-    .score-table tbody td {
-        padding: 6px 8px;
-    }
-}
-
-
 /* ================= MATCH RESULT CARD ================= */
 
 .match-result-card {
