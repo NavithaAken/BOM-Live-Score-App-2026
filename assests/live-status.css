@@ -1,0 +1,76 @@
+/* ================= MATCH STATUS SECTION ================= */
+
+.score-status {
+    padding: 50px 5%;
+    background: linear-gradient(135deg, #ffffff, #f4eded);
+}
+
+
+.match-summary-box {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+    border: 3px solid #800000;
+    border-left: 8px solid gold;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.match-summary-box .score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #800000;
+}
+
+
+.match-summary-box .score-table thead th {
+    background: #800000;
+    color: white;
+    font-size: 1.1rem;
+    padding: 14px;
+    border: 2px solid gold;
+    text-align: center;
+}
+
+
+.match-summary-box .score-table td {
+    padding: 14px;
+    border: 2px solid #e2caca;
+    font-size: 1rem;
+}
+
+
+.match-summary-box .score-table td:first-child {
+    background: #f8eaea;
+    color: #800000;
+    font-weight: 600;
+    width: 35%;
+}
+
+
+.match-summary-box .score-table td:nth-child(2) {
+    text-align: center;
+    font-weight: 500;
+}
+
+.match-summary-box .score-table tbody tr:hover {
+    background: #fff0d9;
+    transition: 0.2s ease;
+}
+
+
+@media (max-width: 768px) {
+    .match-summary-box {
+        padding: 20px;
+    }
+
+    .match-summary-box .score-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
