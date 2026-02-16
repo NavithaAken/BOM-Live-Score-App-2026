@@ -890,10 +890,9 @@ body {
 @media (max-width: 768px) {
 
 .score-table {
-    width: 50%;
+    width: auto;
     border-collapse: collapse;
     display: block;
-    overflow-x: auto;
 }
 
 .score-table table {
