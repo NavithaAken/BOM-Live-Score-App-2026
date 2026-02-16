@@ -56,6 +56,13 @@ body {
     transition: 0.3s ease;
 }
 
+.nav-logo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
 .nav-links a:hover,
 .nav-links a.active {
     color: #ffffff;
@@ -633,6 +640,87 @@ body {
     color: #800000;
     align-items: center;
 }
+
+/* ===== Collaboration Section ===== */
+
+.collab-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #ffffff, #f4eded);
+}
+
+.collab-card {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 25px;
+
+    background: rgba(128, 0, 0, 0.06);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 2px solid rgba(128, 0, 0, 0.4);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.15),
+        0 0 30px rgba(255,215,0,0.25);
+
+    transition: 0.3s ease;
+}
+
+.collab-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.2),
+        0 0 40px rgba(255,215,0,0.35);
+}
+
+
+.collab-text {
+    font-size: 1rem;
+    color: #800000;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.collab-title {
+    font-size: 2rem;
+    color: #800000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.collab-logo img {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.2));
+    transition: 0.3s ease;
+}
+
+.collab-logo img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+
+    .collab-card {
+        padding: 35px 25px;
+    }
+
+    .collab-title {
+        font-size: 1.5rem;
+    }
+
+    .collab-logo img {
+        width: 90px;
+    }
+}
+
 
 
 /* ================= TABLET RESPONSIVE ================= */
