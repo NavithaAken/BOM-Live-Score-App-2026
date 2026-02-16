@@ -591,14 +591,15 @@ body {
 
 .credits-container {
     display: flex;
-    justify-content: center;
-    padding: 60px 5%;
-    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #ffffff, #f4eded);
 }
 
 .credits-card {
-    max-width: 1000px;
     width: 100%;
+    max-width: 1000px;
 }
 
 .credits-title {
@@ -641,11 +642,12 @@ body {
 
 /* ===== Collaboration Section ===== */
 
+
 .collab-section {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 80px 5%;
-    background: linear-gradient(135deg, #ffffff, #f4eded);
+    margin-bottom: 70px; 
 }
 
 .collab-card {
@@ -669,15 +671,14 @@ body {
 }
 
 .collab-card:hover {
-    transform: translateY(-6px);
-    box-shadow:
-        0 30px 70px rgba(0,0,0,0.2),
-        0 0 40px rgba(255,215,0,0.35);
+    transform: translateY(-5px);
 }
+
 
 
 .collab-text {
     font-size: 1rem;
+    font-weight: 500;
     color: #800000;
     opacity: 0.8;
     letter-spacing: 1px;
@@ -887,22 +888,46 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .score-table th,
-    .score-table td {
-        font-size: 0.85rem;
-        padding: 8px;
+@media (max-width: 992px) {
+
+    .score-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    .team-box,
-    .team-box-nalanda {
-        padding: 20px;
-    }
-
-    .section-title {
-        font-size: 1.7rem;
+    .score-table thead th,
+    .score-table tbody td {
+        font-size: 0.9rem;
+        padding: 10px 12px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .score-table {
+        font-size: 0.85rem;
+    }
+
+    .score-table thead th,
+    .score-table tbody td {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .score-table {
+        font-size: 0.75rem;
+    }
+
+    .score-table thead th,
+    .score-table tbody td {
+        padding: 6px 8px;
+    }
+}
+
 
 /* ================= MATCH RESULT CARD ================= */
 
