@@ -906,6 +906,25 @@ body {
 
 } */
 
+@media (max-width: 768px) {
+    .team-box {
+        padding: 20px;
+    }
+    .team-box-nalanda {
+        padding: 20px;
+    }
+
+    .team-box .score-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .team-box-nalanda .score-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
 
 /* ================= MATCH RESULT CARD ================= */
 
