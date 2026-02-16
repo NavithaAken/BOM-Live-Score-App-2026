@@ -74,3 +74,75 @@
         padding: 10px;
     }
 }
+
+/* ================= SPECIAL ANNOUNCEMENT CARD ================= */
+
+.announcement-card {
+    position: relative;
+    margin: 50px auto;
+    padding: 75px;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+
+    border: 2px solid rgba(255, 215, 0, 0.6);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15),
+                0 0 25px rgba(255,215,0,0.3);
+
+    transition: 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2),
+                0 0 35px rgba(255,215,0,0.5);
+}
+
+
+.announcement-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background: #800000;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.announcement-title {
+    font-size: 2.5rem;
+    color: #800000;
+    margin-bottom: 15px;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(255,215,0,0.6);
+}
+
+
+.announcement-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+    .announcement-card {
+        padding: 25px;
+        margin: 35px 15px;
+    }
+
+    .announcement-title {
+        font-size: 1.8rem;
+    }
+
+    .announcement-text {
+        font-size: 1rem;
+    }
+}
+
