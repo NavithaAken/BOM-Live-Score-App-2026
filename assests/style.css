@@ -274,7 +274,8 @@ body {
 
 .footer {
     background: #300000;
-    color: white;
+    color: gold;
+    font-weight: 500;
     padding: 20px 5%;
 }
 
