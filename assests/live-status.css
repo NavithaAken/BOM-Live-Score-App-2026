@@ -64,14 +64,47 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
+
+    .team-box,
+    .team-box-nalanda,
     .match-summary-box {
-        padding: 20px;
+        padding: 18px;
     }
 
-    .match-summary-box .score-table td {
-        font-size: 0.9rem;
-        padding: 10px;
+    .team-title {
+        font-size: 1.3rem;
+    }
+
+    .score-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .score-table th,
+    .score-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .team-title {
+        font-size: 1.1rem;
+    }
+
+    .score-table th,
+    .score-table td {
+        padding: 6px;
+        font-size: 0.75rem;
     }
 }
 
