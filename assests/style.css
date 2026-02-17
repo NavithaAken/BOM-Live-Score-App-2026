@@ -961,12 +961,12 @@ body {
 
     #batting-table {
         display: block;
-        overflow-x: auto;
+        overflow-x: visible;
     }
 
     #bowling-table {
         display: block;
-        overflow-x: auto;
+        overflow-x: visible;
     }
 
     #batting-table th,
