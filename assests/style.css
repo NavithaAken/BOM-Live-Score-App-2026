@@ -928,7 +928,7 @@ body {
     padding: 12px;
     text-align: center;
     border: 2px solid #e2caca;
-    font-size: 20px;
+    font-size: 0.95rem;
 }
 
 #batting-table tbody tr:nth-child(even) {
