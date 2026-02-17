@@ -952,7 +952,7 @@ body {
     #bowling-table th,
     #bowling-table td {
         padding: 8px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -961,12 +961,12 @@ body {
 
     #batting-table {
         display: block;
-        overflow-x: visible;
+        overflow-x: auto;
     }
 
     #bowling-table {
         display: block;
-        overflow-x: visible;
+        overflow-x: auto;
     }
 
     #batting-table th,
