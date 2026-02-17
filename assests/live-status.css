@@ -1,130 +1,182 @@
-/* ================= MATCH STATUS SECTION ================= */
+.live-score-section {
+        background: linear-gradient(135deg,
+            #ffffff 0%,
+            #ffe6e6 20%,
+            #ffcccc 40%,
+            #ff9999 60%,
 
-.score-status {
-    padding: 50px 5%;
-    background: linear-gradient(135deg, #ffffff, #f4eded);
-}
-
-
-.match-summary-box {
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 50px;
-    border: 3px solid #800000;
-    border-left: 8px solid gold;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.match-summary-box .score-table-status {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    border: 2px solid #800000;
-}
-
-
-.match-summary-box .score-table-status thead th {
-    background: #800000;
-    color: white;
-    font-size: 1.1rem;
-    padding: 14px;
-    border: 2px solid gold;
+        );
+    padding: 60px 20px;
     text-align: center;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-
-.match-summary-box .score-table-status td {
-    padding: 14px;
-    border: 2px solid #e2caca;
-    font-size: 1rem;
-}
-
-
-.match-summary-box .score-table-status td:first-child {
-    background: #f8eaea;
+.match-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #800000;
     color: #800000;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+
+.match-title {
+    font-size: 2.2rem;
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+.match-title span {
+    color: gray;
+}
+
+.match-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
     font-weight: 600;
-    width: 35%;
 }
 
 
-.match-summary-box .score-table-status td:nth-child(2) {
-    text-align: center;
+.match-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.info-pill {
+    border: 1px solid #d4af37;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.99rem;
+    color: #800000;
+}
+
+
+.score-card {
+    background: #fff8f0;
+    border: 2px solid #800000;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto 35px auto;
+}
+
+.score-label {
+    font-size: 0.75rem;
     font-weight: 500;
+    letter-spacing: 1px;
+    color: #800000;
 }
 
-.match-summary-box .score-table-status tbody tr:hover {
-    background: #fff0d9;
+.score-value {
+    font-size: 3rem;
+    color: #800000;
+    margin: 10px 0;
+}
+
+.score-overs {
+    color: #555;
+}
+
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.player-box {
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    text-align: left;
+}
+
+.box-title {
+    font-size: 0.85rem;
+    font-weight: 450;
+    color: #800000;
+    margin-bottom: 5px;
+}
+
+.player-box h4 {
+    margin: 0;
+    color: #800000;
+}
+
+.player-box span {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.recent-container {
+    background: #f6f2eb;    
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 650px;
+    margin: 30px auto;
+    border: 1px solid #e0d6c8;
+}
+
+
+.recent-title {
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+
+.recent-balls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.recent-balls span {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #efe6d7;              
+    border: 1.5px solid #d4af37;      
+    border-radius: 12px;
+
+    font-weight: 600;
+    color: #800000;
+    font-size: 0.95rem;
+
     transition: 0.2s ease;
 }
 
+.recent-balls span:hover {
+    background: #800000;
+    color: white;
+    transform: translateY(-3px);
+}
 
-@media (max-width: 700px) {
-
-    .team-box,
-    .team-box-nalanda,
-    .match-summary-box {
-        padding: 18px;
+@media (max-width: 768px) {
+    .match-title {
+        font-size: 1.6rem;
     }
 
-    .team-title {
-        font-size: 1rem;
-    }
-
-    .score-table-status {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .score-table-status th,
-    .score-table-status td {
-        padding: 8px;
-        font-size: 0.50rem;
+    .score-value {
+        font-size: 2.2rem;
     }
 }
 
-
-@media (max-width: 600px) {
-
-    .section-title {
-        font-size: 0.9rem;
-    }
-
-    .team-title {
-        font-size: 0.9rem;
-    }
-
-    .score-table-status th,
-    .score-table-status td {
-        padding: 6px;
-        font-size: 0.40rem;
-    }
-}
-
-
-@media (max-width: 300px) {
-
-    .section-title {
-        font-size: 0.7rem;
-    }
-
-    .team-title {
-        font-size: 0.9rem;
-    }
-
-    .score-table-status th,
-    .score-table-status td {
-        padding: 6px;
-        font-size: 0.25rem;
-    }
-}
 /* ================= SPECIAL ANNOUNCEMENT CARD ================= */
 
 .announcement-card {
