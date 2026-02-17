@@ -20,7 +20,7 @@
 }
 
 
-.match-summary-box .score-table {
+.match-summary-box .score-table-status {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -28,7 +28,7 @@
 }
 
 
-.match-summary-box .score-table thead th {
+.match-summary-box .score-table-status thead th {
     background: #800000;
     color: white;
     font-size: 1.1rem;
@@ -38,14 +38,14 @@
 }
 
 
-.match-summary-box .score-table td {
+.match-summary-box .score-table-status td {
     padding: 14px;
     border: 2px solid #e2caca;
     font-size: 1rem;
 }
 
 
-.match-summary-box .score-table td:first-child {
+.match-summary-box .score-table-status td:first-child {
     background: #f8eaea;
     color: #800000;
     font-weight: 600;
@@ -53,12 +53,12 @@
 }
 
 
-.match-summary-box .score-table td:nth-child(2) {
+.match-summary-box .score-table-status td:nth-child(2) {
     text-align: center;
     font-weight: 500;
 }
 
-.match-summary-box .score-table tbody tr:hover {
+.match-summary-box .score-table-status tbody tr:hover {
     background: #fff0d9;
     transition: 0.2s ease;
 }
@@ -76,15 +76,15 @@
         font-size: 1.3rem;
     }
 
-    .score-table {
+    .score-table-status {
         display: block;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
     }
 
-    .score-table th,
-    .score-table td {
+    .score-table-status th,
+    .score-table-status td {
         padding: 8px;
         font-size: 0.85rem;
     }
@@ -101,8 +101,8 @@
         font-size: 1.1rem;
     }
 
-    .score-table th,
-    .score-table td {
+    .score-table-status th,
+    .score-table-status td {
         padding: 6px;
         font-size: 0.75rem;
     }
