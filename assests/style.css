@@ -905,6 +905,14 @@ body {
     border-collapse: collapse;
     margin-bottom: 35px;
     border: 2px solid #800000;
+    table-layout: fixed;  
+}
+
+#batting-table th,
+#batting-table td {
+    width: 20%;         
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
 }
 
 #batting-table thead tr:first-child th {
@@ -916,6 +924,7 @@ body {
     border: 2px solid gold;
 }
 
+
 #batting-table thead tr:nth-child(2) th {
     background: #f8eaea;
     color: #800000;
@@ -924,12 +933,15 @@ body {
     font-weight: 600;
 }
 
+
 #batting-table td {
     padding: 12px;
     text-align: center;
     border: 2px solid #e2caca;
     font-size: 0.95rem;
-}
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 #batting-table tbody tr:nth-child(even) {
     background: #fff7f7;
@@ -938,6 +950,15 @@ body {
 #batting-table tbody tr:hover {
     background: #fff0d9;
     transition: 0.2s ease;
+}
+
+
+@media (max-width: 768px) {
+    #batting-table th,
+    #batting-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
 }
 
 
