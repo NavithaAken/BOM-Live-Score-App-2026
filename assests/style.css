@@ -845,51 +845,6 @@ body {
 
 /* ================= TABLE STYLE ================= */
 
-.score-table {
-    width: 100%;
-    border-collapse: collapse;  
-    margin-bottom: 35px;
-    border: 2px solid #800000;
-}
-
-
-.score-table thead tr:first-child th {
-    background: #800000;
-    color: white;
-    font-size: 1rem;
-    text-align: left;
-    padding: 12px;
-    border: 2px solid gold;
-}
-
-
-.score-table thead tr:nth-child(2) th {
-    background: #f8eaea;
-    color: #800000;
-    padding: 12px;
-    border: 2px solid #800000;
-    font-weight: 600;
-}
-
-
-.score-table td {
-    padding: 12px;
-    text-align: center;
-    border: 2px solid #e2caca;
-    font-size: 0.95rem;
-}
-
-.score-table tbody tr:nth-child(even) {
-    background: #fff7f7;
-}
-
-
-.score-table tbody tr:hover {
-    background: #fff0d9;
-    transition: 0.2s ease;
-}
-
-
 .total-row td {
     background: gold;
     color: #800000;
@@ -904,18 +859,98 @@ body {
     border: 2px solid #800000;
 }
 
+
+#bowling-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 35px;
+    border: 2px solid #800000;
+}
+
+#bowling-table thead tr:first-child th {
+    background: #800000;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    padding: 12px;
+    border: 2px solid gold;
+}
+
+#bowling-table thead tr:nth-child(2) th {
+    background: #f8eaea;
+    color: #800000;
+    padding: 12px;
+    border: 2px solid #800000;
+    font-weight: 600;
+}
+
+#bowling-table td {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #e2caca;
+    font-size: 0.95rem;
+}
+
+#bowling-table tbody tr:nth-child(even) {
+    background: #fff7f7;
+}
+
+#bowling-table tbody tr:hover {
+    background: #fff0d9;
+    transition: 0.2s ease;
+}
+
+#batting-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 35px;
+    border: 2px solid #800000;
+}
+
+#batting-table thead tr:first-child th {
+    background: #800000;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    padding: 12px;
+    border: 2px solid gold;
+}
+
+#batting-table thead tr:nth-child(2) th {
+    background: #f8eaea;
+    color: #800000;
+    padding: 12px;
+    border: 2px solid #800000;
+    font-weight: 600;
+}
+
+#batting-table td {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #e2caca;
+    font-size: 0.95rem;
+}
+
+#batting-table tbody tr:nth-child(even) {
+    background: #fff7f7;
+}
+
+#batting-table tbody tr:hover {
+    background: #fff0d9;
+    transition: 0.2s ease;
+}
+
+
 @media (min-width: 601px) and (max-width: 900px) {
 
-    .section-title {
-        font-size: 1.6rem;
+    #batting-table th,
+    #batting-table td {
+        padding: 8px;
+        font-size: 0.8rem;
     }
 
-    .team-title {
-        font-size: 1.4rem;
-    }
-
-    .score-table th,
-    .score-table td {
+    #bowling-table th,
+    #bowling-table td {
         padding: 8px;
         font-size: 0.8rem;
     }
@@ -924,20 +959,30 @@ body {
 
 @media (max-width: 600px) {
 
-    .section-title {
-        font-size: 1.1rem;
+    #batting-table {
+        display: block;
+        overflow-x: auto;
     }
 
-    .team-title {
-        font-size: 1.1rem;
+    #bowling-table {
+        display: block;
+        overflow-x: auto;
     }
 
-    .score-table th,
-    .score-table td {
+    #batting-table th,
+    #batting-table td {
         padding: 6px;
-        font-size: 0.50rem;
+        font-size: 0.55rem;
+    }
+
+    #bowling-table th,
+    #bowling-table td {
+        padding: 6px;
+        font-size: 0.55rem;
     }
 }
+
+
 
 
 
