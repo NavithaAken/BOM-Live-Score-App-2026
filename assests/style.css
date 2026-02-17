@@ -904,6 +904,23 @@ body {
     border: 2px solid #800000;
 }
 
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .team-title {
+        font-size: 1.4rem;
+    }
+
+    .score-table th,
+    .score-table td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
+
 
 @media (max-width: 600px) {
 
