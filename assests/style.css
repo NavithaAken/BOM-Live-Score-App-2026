@@ -972,7 +972,7 @@ body {
     #batting-table th,
     #batting-table td {
         padding: 6px;
-        font-size: 1rem;
+        font-size: 0.55rem;
     }
 
     #bowling-table th,
